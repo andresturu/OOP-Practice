@@ -30,14 +30,14 @@ class People:
 dude_1 = People('Mike', 'Wazowski', 1)
 dude_2 = People('Pepe', 'Ariano', 10)
 
-People.num_of_people +=1
-print("Number of people = {}".format(People.num_of_people))
 
 for i in range(5):
     print("Current aura is {}".format(dude_1.aura_check()))
     print("Adding....")
+    time.sleep(0.5)
     dude_1.aura_farm()
     print("New aura is {}".format(dude_1.aura_check()))
+    
 
 '''
 print(dude_1.__dict__)      #using dict is a powerful tool to see inside objects, and classes
